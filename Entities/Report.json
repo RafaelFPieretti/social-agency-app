@@ -1,0 +1,50 @@
+{
+  "name": "Report",
+  "type": "object",
+  "properties": {
+    "client_id": {
+      "type": "string",
+      "description": "ID do cliente associado"
+    },
+    "period_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "period_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "followers_gained": {
+      "type": "number",
+      "default": 0
+    },
+    "total_impressions": {
+      "type": "number",
+      "default": 0
+    },
+    "total_reach": {
+      "type": "number",
+      "default": 0
+    },
+    "total_messages": {
+      "type": "number",
+      "default": 0
+    },
+    "bio_link_clicks": {
+      "type": "number",
+      "default": 0
+    },
+    "engagement_rate": {
+      "type": "number",
+      "default": 0
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "client_id",
+    "period_start",
+    "period_end"
+  ]
+}
